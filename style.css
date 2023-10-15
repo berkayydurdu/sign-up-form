@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Titillium Web";
+  src:
+    url("fonts/titilliumweb-regular-webfont.woff2") format("woff2"),
+    url("fonts/titilliumweb-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif, serif, Arial, Helvetica;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+}
+
+.content,
+.logo {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.picture {
+  background-image: url('nomad.jpg');
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 40vw;
+  height: 100vh;
+}
+
+.logo {
+  height: auto;
+  position: relative;
+  /* background-color: rgba(7, 228, 7, 0.6); */
+  top: 9vh;
+  gap: 1vw;
+  padding: 15px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo > * {
+  height: 10vh;
+  color: rgba(250, 20, 20, 0.7);
+  font-size: 6vh;
+}
+
+.form {
+  width: 60vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  flex: 1 1 auto;
+}
+
+.quote-text {
+  font-weight: 500;
+  width: 100%;
+  font-size: 1.2rem;
+  padding-bottom: 15vh;
+  padding-left: 2vw;
+  padding-top: 2vw;
+  
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+.entries {
+  display: flex;
+  gap: 20px;
+  flex-flow: row wrap;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 2vw;
+  background-color: rgba(red, green, blue, 0.3);
+}
+
+.form-title {
+  width: 100%;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.input {
+  display: flex;
+  flex-flow: column wrap;
+  width: 40%;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  opacity: 60%;
+}
+
+button {
+  color: white;
+  background-color: #596D48;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 10px 30px;
+  margin: 30px 0;
+}
+
+.log-in-area {
+  display: flex;
+  padding-left: 2vw;
+  padding-top: 2vw;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: beige;
+  width: 100%;
+  flex: 1;
+}
+
+.log-in-area > a {
+  padding-left: 1vh;
+}
+
+a {
+  color: #596D48;
+  text-decoration: none;
+}
